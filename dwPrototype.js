@@ -150,7 +150,7 @@
             };
 
             tableau.connectionData = JSON.stringify(datasetCreds);
-            tableau.connectionName = "data.world connector";
+            tableau.connectionName = JSON.stringify(datasetCreds.dataset);
             tableau.submit();
         });
     });
